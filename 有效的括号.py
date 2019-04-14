@@ -77,7 +77,7 @@ class Solution(object):
             if char in mapping:
 
                 # Pop the topmost element from the stack, if it is non empty
-                # Otherwise assign a dummy value of '#' to the top_element variable
+                # Otherwise assign a dummy(虚拟的) value of '#' to the top_element variable
                 top_element = stack.pop() if stack else '#'
 
                 # The mapping for the opening bracket in our hash and the top
