@@ -69,22 +69,24 @@ class Solution:
             return -1
 
         low, high = 0, len(nums) - 1
-
+        # 二分查找
         while low <= high:
-            mid = (low + high) // 2
-            if target == nums[mid]:
+            mid = (low + high) // 2  # 二分就中间位置
+            if target == nums[mid]:  
                 return mid
 
-            if nums[low] <= nums[mid]:
-                if nums[low] <= target <= nums[mid]:
-                    high = mid
+            if nums[low] <= nums[mid]: # 先判断哪边有序，在判断target在哪边序列中
+                # 左边有序
+                if nums[low] <= target <= nums[mid]: # 当目标值在左半段之间，即最小值与中间值之间
+                    high = mid # 此时，最大值即中间值
                 else:
-                    low = mid + 1
+                    low = mid + 1 # 否则目标值大于中间值，此时最小值等于中间值+1
             else:
-                if nums[mid] <= target <= nums[high]:
-                    low = mid
+                # 右边有序
+                if nums[mid] <= target <= nums[high]: # 当目标值在右半段之间，即中间值与最大值之间
+                    low = mid # 此时，最小值即中间值
                 else:
-                    high = mid - 1
+                    high = mid - 1 # 否则目标值小于中间值，此时最大值等于中间值-1
 
         return -1
 
