@@ -12,10 +12,6 @@
 # 示例 1:
 # 输入: s = "LEETCODEISHIRING", numRows = 3
 # 输出: "LCIRETOESIIGEDHN"
-# 解释：
-# L   C   I   R
-# E T O E S I I G
-# E   D   H   N
 
 # 示例 2:
 # 输入: s = "LEETCODEISHIRING", numRows = 4
