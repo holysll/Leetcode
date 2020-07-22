@@ -26,6 +26,7 @@
 #   输入: "{[]}"
 #   输出: true
 
+
 # Solution Code
 class Solution(object):
     def isValid(self, s):
