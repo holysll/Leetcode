@@ -5,8 +5,7 @@
 # datetime: 2020-7-5 3:46
 # software: PyCharm
 """
-题目：
-反转一个单链表。
+题目：反转一个单链表
 
 示例:
 
@@ -20,8 +19,7 @@
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
 
-# Python packages
-import sys
+
 class ListNode:
     def __init__(self, x):
         self.val = x
@@ -47,6 +45,8 @@ class Solution(object):
             cur = temp
         return pre
 
+    
+# 创建链表
 def createList():
     head = ListNode(1)
     cur = head
@@ -55,6 +55,8 @@ def createList():
         cur = cur.next
     return head
 
+
+# 打印链表
 def printList(head):
     cur = head
     while cur:
