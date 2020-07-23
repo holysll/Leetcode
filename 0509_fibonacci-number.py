@@ -112,3 +112,22 @@ class Solution5(object):
         for i in range(2, n + 1):
             s.append(s[-1] + s[-2])
         return s[n] % 1000000007
+
+
+if __name__ == "__main__":
+    n = 3
+    solution1 = Solution1()
+    res1 = solution1.fib(n)
+    print(res1)
+    
+    solution2 = Solution2()
+    res2 = solution2.fib(n)
+    print(res2)
+    
+    solution3 = Solution3()
+    res3 = solution3.fib(n)
+    print(res3)
+    
+    solution4 = Solution4()
+    res4 = solution4.fib(n)
+    print(res4)
