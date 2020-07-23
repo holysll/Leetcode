@@ -30,9 +30,6 @@
 """
 
 
-# Python packages
-
-
 class Solution(object):
     def findMin(self, nums):
         """
