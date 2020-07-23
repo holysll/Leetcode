@@ -40,6 +40,7 @@
 
 # Python packages
 
+
 # 定义二叉树节点
 class TreeNode(object):
     def __init__(self, x):
@@ -154,8 +155,3 @@ class Solution2(object):
 
         helper(root)
         return self.res
-
-
-if __name__ == '__main__':
-    solution = Solution()
-    solution.maxPathSum()
