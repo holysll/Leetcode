@@ -6,7 +6,9 @@
 # software: PyCharm
 
 """
-给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
+题目：最长有效括号
+
+给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
 
 示例 1:
 
@@ -23,8 +25,6 @@
 链接：https://leetcode-cn.com/problems/longest-valid-parentheses
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 """
-# Python packages
-import sys
 
 
 class Solution(object):
