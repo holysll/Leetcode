@@ -107,8 +107,3 @@ class Solution3(object):
             return left + 1
         else:
             return right + 1
-
-
-if __name__ == '__main__':
-    solution = Solution()
-    solution.maxDepth()
