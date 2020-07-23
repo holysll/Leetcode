@@ -34,11 +34,9 @@ queue.empty(); // 返回 false
 """
 
 
-# Python packages
-
-
 # 核心思想：理解栈是后进先出（LIFO），而队列是先进先出（FIFO）
-# 单栈解法
+
+# 单栈实现
 class MyQueue(object):
 
     def __init__(self):
@@ -81,7 +79,7 @@ class MyQueue(object):
         return True
 
 
-# 双栈解法
+# 双栈实现
 class MyQueue(object):
 
     def __init__(self):
@@ -131,10 +129,3 @@ class MyQueue(object):
         if self.stack1 or self.stack2:
             return False
         return True
-
-# Your MyQueue object will be instantiated and called as such:
-# obj = MyQueue()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.peek()
-# param_4 = obj.empty()
