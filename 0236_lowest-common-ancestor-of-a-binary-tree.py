@@ -65,8 +65,3 @@ class Solution(object):
             return left
 
         return root  # 当left和right都不为空，p、q在root的不同侧，返回root
-
-
-if __name__ == '__main__':
-    solution = Solution()
-    solution.lowestCommonAncestor()
