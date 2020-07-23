@@ -154,6 +154,10 @@ def createTree(input_list):
     root.right = createTree(input_list)
     return root
 
+# 打印二叉树
+def printTree():
+   pass
+
 if __name__ == '__main__':
     my_input_list = list([1,None,2,3])
     root = createTree(my_input_list)
