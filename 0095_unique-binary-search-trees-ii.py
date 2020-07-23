@@ -40,7 +40,6 @@
 """
 
 # Python packages
-import sys
 
 
 # 定义一个二叉树的节点
