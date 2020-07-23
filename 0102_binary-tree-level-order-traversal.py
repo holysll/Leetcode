@@ -93,7 +93,7 @@ class Solution2(object):
         dfs(root, 0)
         return res
 
-
+# 创建二叉树
 def createTree(root):
     if root == None:
         return root
@@ -125,7 +125,7 @@ def createTree(root):
         front += 1
     return Root
 
-
+# 打印二叉树
 def printTree(root):
     if root != None:
         print(root.val)
