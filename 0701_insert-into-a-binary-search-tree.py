@@ -53,7 +53,7 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
-# 递归
+# 递归解法
 class Solution(object):
     def insertIntoBST(self, root, val):
         """
@@ -70,7 +70,7 @@ class Solution(object):
             root.left = self.insertIntoBST(root.left, val)
         return root
 
-# 迭代
+# 迭代解法
 class Solution1(object):
     def insertIntoBST(self, root, val):
         """
