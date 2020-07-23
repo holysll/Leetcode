@@ -92,8 +92,3 @@ class Solution3(object):
             else:  # 标记为1则输出
                 res.append(node.val)
         return res
-
-if __name__ == '__main__':
-    root = TreeNode(3)
-    solution1 = Solution1()
-    solution1.postorderTraversal(root)
