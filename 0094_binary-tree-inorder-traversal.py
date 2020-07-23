@@ -92,6 +92,7 @@ class Solution3(object):
                 res.append(node.val)
         return res
 
+
 if __name__ == '__main__':
     root = TreeNode(3)
     solution1 = Solution1()
