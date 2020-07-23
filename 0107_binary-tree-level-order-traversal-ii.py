@@ -123,7 +123,7 @@ def createTree(root):
 
     return Root
 
-
+# 打印树
 def printTree(root):
     if root != None:
         print(root.val)
