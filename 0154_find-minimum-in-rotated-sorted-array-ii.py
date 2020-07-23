@@ -105,7 +105,7 @@ class Solution2(object):
 
 
 if __name__ == '__main__':
-    nums = [2, 2, 2, 0, 1]
+    nums = [3, 1, 2, 1, 1]
     solution = Solution()
     res = solution.findMin(nums)
     print(res)
