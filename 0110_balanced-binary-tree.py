@@ -94,7 +94,7 @@ class Solution1(object):
         return abs(self.depth(root.left) - self.depth(root.right)) <= 1 and self.isBalanced(
             root.left) and self.isBalanced(root.right)
 
-
+# 
 class Solution2(object):
     def isBalanced(self, root):
         """
