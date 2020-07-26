@@ -69,19 +69,38 @@ class Solution1:
 
         return True
 
+
 # 递归
 class Solution2:
     def isSubsequence(self, s: str, t: str) -> bool:
-        if not s :
+        if not s:
             return True
         if not t:
             return False
         for j in range(len(t)):
-            if s[0]==t[j]:
-                if len(s)==1:
+            if s[0] == t[j]:
+                if len(s) == 1:
                     return True
-                return self.isSubsequence(s[1:],t[j+1:])
+                return self.isSubsequence(s[1:], t[j + 1:])
         return False
+
+
+# 利用find函数
+class Solution3:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        if s == "": return True
+        loc = -1
+        for i in s:
+            loc = t.find(i, loc + 1)
+            if loc == -1:
+                return False
+        return True
+
+# 利用迭代器，调用内部__next__()方法
+class Solution4:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        t = iter(t)
+        return all(c in t for c in s)
 
 
 if __name__ == '__main__':
@@ -95,6 +114,10 @@ if __name__ == '__main__':
     res1 = solution1.isSubsequence(s, t)
     print(res1)
 
-    solution2= Solution2()
+    solution2 = Solution2()
     res2 = solution2.isSubsequence(s, t)
     print(res2)
+
+    solution3 = Solution3()
+    res3 = solution3.isSubsequence(s, t)
+    print(res3)
