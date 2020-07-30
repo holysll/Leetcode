@@ -79,7 +79,7 @@ class Solution2(object):
                 return f[n]
             res = -1
             for i in range(1, n):
-                res = max(res, max(i*(n-i), i*func(n-i)))
+                res = max(res, max(i * (n - i), i * func(n - i)))
             f[n] = res
             return res
         return func(n)
