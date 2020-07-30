@@ -82,6 +82,7 @@ class Solution2(object):
                 res = max(res, max(i*(n-i), i*func(n-i)))
             f[n] = res
             return res
+        return func(n)
 
 
 if __name__ == '__main__':
