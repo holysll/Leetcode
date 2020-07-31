@@ -128,6 +128,7 @@ class Solution1(object):
                 res = max(res, DFS(i, j))
         return res
 
+
 # 排序+动态规划
 class Solution2(object):
     def longestIncreasingPath(self, matrix):
@@ -145,7 +146,7 @@ class Solution2(object):
                 dp[j - 1][k] if j and matrix[j - 1][k] < i else 0,
                 dp[j][k - 1] if k and matrix[j][k - 1] < i else 0,
                 dp[j + 1][k] if j != m - 1 and matrix[j + 1][k] < i else 0,
-                dp[j][k + 1] if k != n - 1  and matrix[j][k + 1] < i else 0
+                dp[j][k + 1] if k != n - 1 and matrix[j][k + 1] < i else 0
             )
         return max(sum(dp, []))
 
